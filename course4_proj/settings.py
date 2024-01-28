@@ -166,3 +166,6 @@ class Dev(Configuration):
     OMDB_KEY = "ab520f9e"
     CELERY_RESULT_BACKEND = "django-db"
     CELERY_BROKER_URL = "redis://localhost:6379/0"
+
+    EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+    ADMINS = [("codio", "codio@example.com")]
